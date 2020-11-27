@@ -45,6 +45,7 @@ header a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+    color: black;
 }
 
 footer {
@@ -59,6 +60,24 @@ footer div {
     font-size: 20px;
   }
 
-  .hero {
-      background-image: url(/assets/images/hero.jpg);
+  section {
+      padding: 60px;
   }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+  text-shadow: 0px -5px 16px rgba(0, 165, 150, 1);
+  color: white;
+  font-size: 34px;
+}
