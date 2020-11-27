@@ -17,12 +17,14 @@ body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 300px 400px 100px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 300px 300px 300px 300px 500px;
     grid-template-areas: 
     "h h h h h h h h h h h h"
     "hero hero hero hero hero hero hero hero hero hero hero hero"
+     "m c c c c c c c c c c c"
      "m c c c c c c c c c c c" 
+     "m c c c c c c c c c c c"  
      "f f f f f f f f f f f f";
 }
 
@@ -35,8 +37,8 @@ body {
 
 .header h1 {
     padding: 20px;
-    margin: 20px;
-    font-size: 30px
+    margin: 10px;
+    font-size: 40px;
 }
 
 .header nav {
@@ -80,16 +82,49 @@ body {
 
 .menu {
     grid-area: m;
-    margin-top: 20px;
 }
 
 .menu h2 {
-    margin: 0 auto 100px 20px;
-    color: silver;
+    
 }
 
 .content {
     grid-area: c;
+}
+
+.about-me-col {
+    text-align: center;
+    margin: 150px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-me-row {
+    grid-area: c;
+    margin: 10px;
+}
+
+.projects-col {
+    text-align: center;
+    padding: 100px;
+    margin: 100px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.projects-row {
+
+}
+
+.contact-col {
+    text-align: center;
+    margin: 150px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.contact-row {
+
 }
 
 .footer {
