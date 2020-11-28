@@ -87,10 +87,20 @@ section {
 
 .container {
     display: grid;
-    grid-template-rows: 80px 600px 80px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px 300px 300px;
+    grid-template-columns: 0.2fr 1fr;
 }
 
-.grid-item {
-
+.about-me-flex {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+grid-column: 1 / 3;
+grid-row: 1 / 2;
 }
+
+.about-me-flex h2 {
+    padding-right: 160px;
+    margin-left: 60px;
+ }
