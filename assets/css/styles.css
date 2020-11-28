@@ -72,3 +72,25 @@ footer div {
 section {
     padding: 60px;
 }
+
+/*Hero Style Start*/
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: bottom left;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+}
+/*Hero Style End*/
+
+.container {
+    display: grid;
+    grid-template-rows: 80px 600px 80px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-item {
+
+}
