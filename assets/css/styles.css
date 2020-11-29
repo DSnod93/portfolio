@@ -44,6 +44,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-transform: uppercase;
 }
 
 header nav ul li a {
@@ -91,6 +92,7 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
+/*About Me Style Start*/
 .about-me-flex {
     grid-area: 1 / 1 / 2 / 2;
 }
@@ -99,6 +101,7 @@ section {
     text-align: center;
     margin-bottom: 10px;
     font-size: 30px;
+    border-bottom: solid 1px white;
 }
 
 .about-me-flex p {
@@ -108,34 +111,42 @@ section {
 
 .about-me-flex img {
     border-radius: 50px;
+    background-image: url(../images/bio-image.jpg);
+    background-position: left;
+    height: 400px;
+    display: block;
    }
+/*About Me Style End*/
 
+/*Project Style Start*/
  .project-flex {
-    display: flex;
     justify-content: space-around;
     gap: 10px;
     grid-area: 1 / 2 / 2 / 3;
  }
 
  .project-flex h2 {
-    margin-left: 12%;
+    border-bottom: solid 1px white;
+    padding: 10px;
     margin-bottom: 10px;
     font-size: 30px;
+    text-align: center;
 }
 
 .project-flex img {
-    height: 15em;
+    height: 20em;
 }
+/*Project Style End*/
 
+/*Contact Style Start*/
  .contact-flex {
     display: flex;
     grid-area: 2 / 1 / 3 / 3;
     justify-content: space-around;
-    background-color: var(--secondary-color);
+    border-top: solid 1px white;
  }
 
  .contact-flex h2 {
-    margin-left: 12%;
     margin-bottom: 10px;
     font-size: 30px;
 }
@@ -147,4 +158,45 @@ section {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 18px;
+}
+/*Contact Style End*/
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+
+    @media screen and (max-width: 980px) {
+        .project-flex {
+            display: block;
+            flex-wrap: wrap;
+            padding: 0;
+            margin-top: 40px;
+        }
+        .project-flex .run-buddy {
+            margin-right: 30px;
+            padding: 60px;
+        }
+    .project-flex .app-2 {
+        display: flex;
+        padding: 20px;
+        margin-left: 25%;
+        }
+        .project-flex .app-3 {
+            display: flex;
+            margin-left: 25%;
+                padding: 20px;
+        }
+    }
+
+
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
 }
