@@ -245,35 +245,41 @@ section {
     .container {
        display: block;
         flex-wrap: wrap;
+        grid-template-columns: 1fr;
     }
     header ul {
         line-height: 1.5;
     }
     .project-flex {
-        display: block;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
     }
     .project-flex .app-2 {
         display: block;
-        flex-wrap: wrap;
-        width: 70%;
+        justify-content: center;
+        width: 50%;
     }
     .project-flex .app-3 {
         display: block;
-        flex-wrap: wrap;
-        width: 70%;
+        justify-content: center;
+        width: 50%;
     }
     .contact-flex {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 50%;
+        border-top: white 1px solid;
     }
     .contact-flex h2 {
         display: flex;
         flex-wrap: wrap;
-        margin-right: 30%;
+        justify-content: start;
     }
     .contact-flex a {
         display: flex;
-        margin-right: 25%
-        
+        flex-wrap: wrap;
+        margin: 7px;
+        padding: 5px;
     }
 }
