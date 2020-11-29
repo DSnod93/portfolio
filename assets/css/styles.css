@@ -163,31 +163,31 @@ section {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
-    @media screen and (max-width: 980px) {
-        .project-flex {
-            display: block;
-            flex-wrap: wrap;
-            padding: 0;
-            margin-top: 40px;
-        }
-        .project-flex .run-buddy {
-            margin-right: 30px;
-            padding: 60px;
-        }
-    .project-flex .app-2 {
+@media screen and (max-width: 980px) {
+    .project-flex {
         display: flex;
-        padding: 20px;
-        margin-left: 25%;
-        }
-        .project-flex .app-3 {
-            display: flex;
-            margin-left: 25%;
-                padding: 20px;
-        }
-        .contact-flex {
-            margin-right: 20px;
-        }
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 40px;
     }
+    .project-flex .run-buddy {
+       display: flex;
+        width: 100%;
+    }
+.project-flex .app-2 {
+    display: flex;
+    width: 45%;
+    }
+    .project-flex .app-3 {
+        display: flex;
+        width: 45%;
+    }
+    .contact-flex {
+        display: flex;
+        width: 100%;
+    }
+}
+
 
 
 
